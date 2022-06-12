@@ -1,6 +1,5 @@
-const title = "ASOLOLE JOSSS"
-
 // function untuk ganti title web DOM
-function changeTitle() {
-  document.title = title
+function changeTitle(params) {
+  console.log("our parameter = ", params)
+  document.title = params
 }
