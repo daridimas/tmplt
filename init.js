@@ -6,7 +6,11 @@ onload = function () {
   console.log("test onload")
   const token = this.sessionStorage.getItem("token")
   console.log(token)
-  registerForm.style.display = "none"
+  if (token && token != null) {
+    registerForm.style.display = "none"
+  } else {
+    registerForm.style.display = "block"
+  }
 }
 
 function register() {
